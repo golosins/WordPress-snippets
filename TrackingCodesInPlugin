@@ -40,3 +40,4 @@ add_action( 'wp_body_open', 'codefor_tagmanager_b' );
 function codefor_tagmanager_b() { ?>
 <!-- Paste Google Tag Manager for body section here -->
 <?php } 
+?>
