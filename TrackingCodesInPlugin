@@ -1,5 +1,10 @@
 <?php
-/*
+/**
+* Plugin Name: Tracking Code Functions Plugin
+* Description: This plugin contains funtions to handle selected Tracking Codes
+* Author: Stevica Golosin
+* Version: 1.0
+*
 *   Introduction - Put Your Tracking Codes into Plugin
 *  1. Create a folder named mu-plugins within your WordPress site’s wp-content directory.
 *       .../wp-content/mu-plugins 
