@@ -1,0 +1,37 @@
+<?php
+/*
+*   Introduction - Put Your Tracking Codes into Plugin
+*  1. Create a folder named mu-plugins within your WordPress site’s wp-content directory.
+*       .../wp-content/mu-plugins 
+*  2. Copy your plugin’s PHP file into it.
+*  3. Paste codes in functions or make a new function(s) for new type of code(s)
+*/
+
+
+/**
+ * Google Analytics code will be added in <head> section below the <title>.
+ */
+add_action( 'wp_head', 'codefor_ganalytics' );
+
+function codefor_ganalytics() { ?>
+        <!-- Paste Google Analytics code here -->
+
+<?php }
+/**
+ * Google Tag Manager code for head section will be added in <head> below the <title>.
+ */
+add_action( 'wp_head', 'codefor_tagmanager_h' );
+
+function codefor_tagmanager_h() { ?>
+<!-- Paste Google Tag Manager for head section here -->
+
+<?php }
+/**
+ * Google Tag Manager code for body section will be added after opening <body> tag.
+ * ct_before_builder -> hook for Oxygen
+ */
+add_action( 'wp_body_open', 'codefor_tagmanager_b' );
+
+function codefor_tagmanager_b() { ?>
+<!-- Paste Google Tag Manager for body section here -->
+<?php } 
